@@ -7,68 +7,83 @@ import { MouseEvent } from "react";
 
 const items = [
   {
-    title: "About Me",
-    description: "Azure Administrator with 2 years of experience optimizing cloud infrastructures. Focused on scalability, security, and DevOps automation. Passionate about AI and continuous learning.",
+    title: "👋 About Me",
+    description: "Azure Administrator with 2 years of experience optimizing cloud infrastructures. Focused on scalability, security, and DevOps automation. Passionate about AI and continuous learning! 🎓",
     icon: User,
     className: "md:col-span-2 md:row-span-1",
     color: "text-azure-neon",
-    bg: "bg-azure-neon/10",
+    bg: "bg-gradient-to-br from-azure-neon/10 to-purple-500/10",
   },
   {
-    title: "Experience",
+    title: "💼 Experience",
     description: (
-      <ul className="list-disc list-inside space-y-1 text-xs mt-2">
-        <li><strong>Cloud Engineer @ Kyndryl</strong> (Dec 2024 - Present)</li>
-        <li><strong>Azure Platform Engineer @ Naturgy</strong> (Nov 2022 - Apr 2025) - Cognitive Services, Linux.</li>
-        <li><strong>Azure Specialist @ Experis</strong> (Apr 2022 - Jun 2022) - DevOps, Version Control.</li>
+      <ul className="list-none space-y-2 text-xs mt-2">
+        <li className="flex items-start gap-2">
+          <span className="text-azure-neon">▹</span>
+          <span><strong>Cloud Engineer @ Kyndryl</strong> (Dec 2024 - Present) 🚀</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-azure-neon">▹</span>
+          <span><strong>Azure Platform Engineer @ Naturgy</strong> (Nov 2022 - Apr 2025)</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-azure-neon">▹</span>
+          <span><strong>Azure Specialist @ Experis</strong> (Apr 2022 - Jun 2022)</span>
+        </li>
       </ul>
     ),
     icon: Briefcase,
     className: "md:col-span-2 md:row-span-2",
     color: "text-blue-400",
-    bg: "bg-blue-500/10",
+    bg: "bg-gradient-to-br from-blue-500/10 to-cyan-500/10",
   },
   {
-    title: "Education",
+    title: "🎓 Education",
     description: (
-      <div className="space-y-2 text-xs mt-2">
-        <p><strong>Master in Applied AI</strong><br/>Universidad Isabel I (2025)</p>
-        <p><strong>Telecom & IT Systems</strong><br/>IES Pacífico (2018-2020)</p>
+      <div className="space-y-3 text-xs mt-2">
+        <div className="p-2 rounded-lg bg-purple-500/10 border border-purple-500/20">
+          <p className="font-bold text-purple-300">Master in Applied AI 🤖</p>
+          <p className="text-azure-100/70">Universidad Isabel I (2025)</p>
+        </div>
+        <div className="p-2 rounded-lg bg-azure-500/10 border border-azure-500/20">
+          <p className="font-bold text-azure-300">Telecom & IT Systems</p>
+          <p className="text-azure-100/70">IES Pacífico (2018-2020)</p>
+        </div>
       </div>
     ),
     icon: GraduationCap,
     className: "md:col-span-1 md:row-span-2",
     color: "text-purple-400",
-    bg: "bg-purple-500/10",
+    bg: "bg-gradient-to-br from-purple-500/10 to-pink-500/10",
   },
   {
-    title: "Azure Expert",
-    description: "Deep expertise in Azure services, VM scale sets, AKS, and Azure Functions.",
+    title: "☁️ Azure Expert",
+    description: "Deep expertise in Azure services, VM scale sets, AKS, and Azure Functions. Architecting for the cloud! ⚡",
     icon: Cloud,
     className: "md:col-span-1",
     color: "text-cyan-400",
-    bg: "bg-cyan-500/10",
+    bg: "bg-gradient-to-br from-cyan-500/10 to-blue-500/10",
   },
   {
-    title: "DevOps & IaC",
-    description: "Mastery in Terraform, Bicep, Docker, and Kubernetes orchestration.",
+    title: "🔧 DevOps & IaC",
+    description: "Mastery in Terraform, Bicep, Docker, and Kubernetes orchestration. Automation is the future! 🚀",
     icon: Code,
     className: "md:col-span-1",
     color: "text-emerald-400",
-    bg: "bg-emerald-500/10",
+    bg: "bg-gradient-to-br from-emerald-500/10 to-teal-500/10",
   },
   {
-    title: "Testimonial",
+    title: "💬 Testimonial",
     description: (
-      <blockquote className="italic text-xs mt-2 border-l-2 border-azure-neon pl-3">
-        "Miguel is an exceptional colleague, proactive and committed... An expert in Azure technologies with transversal vision and great analytical capacity."
-        <footer className="not-italic font-bold mt-1">- Jose Manuel Sieira</footer>
+      <blockquote className="italic text-xs mt-2 border-l-4 border-azure-neon/50 pl-4 bg-gradient-to-r from-azure-neon/5 to-transparent py-2 rounded-r-lg">
+        "Miguel is an exceptional colleague, proactive and committed... An expert in Azure technologies with transversal vision and great analytical capacity." ⭐⭐⭐⭐⭐
+        <footer className="not-italic font-bold mt-2 text-azure-neon">— Jose Manuel Sieira</footer>
       </blockquote>
     ),
     icon: Quote,
     className: "md:col-span-3",
     color: "text-yellow-400",
-    bg: "bg-yellow-500/10",
+    bg: "bg-gradient-to-br from-yellow-500/10 to-orange-500/10",
   },
 ];
 
@@ -91,10 +106,11 @@ export default function BentoGrid() {
             key={i}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -5, scale: 1.02 }}
             transition={{ delay: i * 0.1 }}
             viewport={{ once: true }}
             className={cn(
-              "relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 transition-colors hover:border-white/20 group/card flex flex-col justify-between",
+              "relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 transition-colors hover:border-white/20 group/card flex flex-col justify-between cursor-pointer",
               item.className
             )}
           >
