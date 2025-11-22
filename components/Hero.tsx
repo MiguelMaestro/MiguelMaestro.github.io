@@ -42,7 +42,7 @@ export default function Hero() {
         className="relative z-10"
       >
         <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter">
-          Miguel <span className="text-gradient drop-shadow-lg">Maestro</span>
+          Miguel Ángel <span className="text-gradient drop-shadow-lg">Maestro</span>
         </h1>
         <div className="h-8 md:h-12 mb-10">
           <span className="text-xl md:text-3xl text-azure-200 font-mono bg-black/20 px-4 py-2 rounded-lg border border-azure-500/20 backdrop-blur-sm">
