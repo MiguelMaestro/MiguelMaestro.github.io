@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/static/
+
+# Sitemap
+Sitemap: https://miguelmaestro.github.io/sitemap.xml
+
+# Performance hints
+Crawl-delay: 1

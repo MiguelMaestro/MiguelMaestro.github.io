@@ -1,0 +1,32 @@
+{
+    "name": "Miguel Maestro Portfolio",
+    "short_name": "MM Portfolio",
+    "description": "Portfolio profesional de Miguel Maestro Martínez - Cloud Engineer especializado en Azure, DevOps y soluciones en la nube",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#020817",
+    "theme_color": "#0ea5e9",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "portfolio",
+        "technology",
+        "cloud"
+    ],
+    "lang": "es-ES",
+    "dir": "ltr",
+    "prefer_related_applications": false
+}

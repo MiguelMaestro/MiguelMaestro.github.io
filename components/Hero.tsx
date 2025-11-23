@@ -106,15 +106,26 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
           className="mt-10 flex flex-wrap justify-center gap-4"
+          role="group"
+          aria-label="Enlaces de contacto principales"
         >
           <motion.a
             ref={projectsButtonRef as React.RefObject<HTMLAnchorElement>}
             href="#projects"
+            aria-label="Ir a la sección de proyectos destacados"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="group px-8 py-3 rounded-full bg-gradient-to-r from-azure-500 to-azure-600 dark:from-azure-neon dark:to-azure-600 text-white font-semibold transition-all shadow-[0_0_25px_rgba(14,165,233,0.4)] hover:shadow-[0_0_40px_rgba(14,165,233,0.6)] relative overflow-hidden"
+            className="group px-8 py-3 rounded-full bg-gradient-to-r from-azure-500 to-azure-600 dark:from-azure-neon dark:to-azure-600 text-white font-semibold transition-all shadow-[0_0_25px_rgba(14,165,233,0.4)] hover:shadow-[0_0_40px_rgba(14,165,233,0.6)] relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-azure-400"
           >
-            <span className="relative z-10">{t.hero.cta.projects}</span>
+            <span className="relative z-10 flex items-center gap-2">
+              {t.hero.cta.projects}
+              <motion.span
+                animate={{ x: [0, 5, 0] }}
+                transition={{ repeat: Infinity, duration: 1.5 }}
+              >
+                →
+              </motion.span>
+            </span>
             <div className="absolute inset-0 bg-gradient-to-r from-azure-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity" />
           </motion.a>
 
@@ -123,9 +134,10 @@ export default function Hero() {
             href="https://www.linkedin.com/in/miguelmaestromartinez"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Conectar en LinkedIn (abre en nueva pestaña)"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 rounded-full border-2 border-azure-500/40 dark:border-azure-neon/40 text-azure-700 dark:text-azure-100 font-semibold hover:bg-azure-500/10 dark:hover:bg-azure-neon/10 hover:border-azure-600 dark:hover:border-azure-neon transition-all backdrop-blur-sm"
+            className="px-8 py-3 rounded-full border-2 border-azure-500/40 dark:border-azure-neon/40 text-azure-700 dark:text-azure-100 font-semibold hover:bg-azure-500/10 dark:hover:bg-azure-neon/10 hover:border-azure-600 dark:hover:border-azure-neon transition-all backdrop-blur-sm focus:outline-none focus:ring-4 focus:ring-azure-400"
           >
             LinkedIn 🔗
           </motion.a>
