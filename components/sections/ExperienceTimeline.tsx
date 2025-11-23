@@ -95,7 +95,7 @@ export default function ExperienceTimeline() {
                   index % 2 === 0 ? "md:text-right md:pr-8" : "md:pl-8"
                 }`}
               >
-                <div className="relative p-6 rounded-2xl backdrop-blur-md bg-white/10 dark:bg-black/20 border border-white/20 shadow-xl hover:shadow-2xl hover:shadow-azure-500/20 transition-all duration-300">
+                <div className="relative p-6 rounded-2xl backdrop-blur-sm bg-white/10 dark:bg-black/20 border border-white/20 shadow-xl hover:shadow-2xl hover:shadow-azure-500/20 transition-all duration-300">
                   {/* Period Badge */}
                   <div
                     className={`inline-block px-4 py-1 rounded-full bg-azure-500/20 text-azure-500 text-sm font-semibold mb-3`}

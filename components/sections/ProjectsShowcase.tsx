@@ -49,7 +49,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       transition={{ delay: index * 0.1, duration: 0.6 }}
       viewport={{ once: true }}
       whileHover={{ scale: 1.02 }}
-      className="group relative rounded-2xl overflow-hidden backdrop-blur-md bg-white/10 dark:bg-black/20 border border-white/20 shadow-xl hover:shadow-2xl hover:shadow-azure-500/20 transition-all duration-300"
+      className="group relative rounded-2xl overflow-hidden backdrop-blur-sm bg-white/10 dark:bg-black/20 border border-white/20 shadow-xl hover:shadow-2xl hover:shadow-azure-500/20 transition-all duration-300"
       style={{ transformStyle: "preserve-3d" }}
     >
       {/* Thumbnail Image */}

@@ -83,7 +83,7 @@ export default function Hero() {
 
         <div className="h-10 md:h-14 mb-8">
           <motion.span
-            className="inline-block text-xl md:text-3xl text-azure-700 dark:text-azure-200 font-mono bg-gradient-to-r from-azure-50/60 dark:from-black/30 to-azure-100/40 dark:to-azure-900/30 px-6 py-3 rounded-xl border border-azure-300/40 dark:border-azure-500/30 backdrop-blur-md shadow-lg"
+            className="inline-block text-xl md:text-3xl text-azure-700 dark:text-azure-200 font-mono bg-gradient-to-r from-azure-50/60 dark:from-black/30 to-azure-100/40 dark:to-azure-900/30 px-6 py-3 rounded-xl border border-azure-300/40 dark:border-azure-500/30 backdrop-blur-sm shadow-lg"
             whileHover={{ scale: 1.05, borderColor: "rgba(14, 165, 233, 0.6)" }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
