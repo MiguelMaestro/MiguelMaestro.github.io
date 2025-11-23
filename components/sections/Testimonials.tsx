@@ -104,7 +104,7 @@ export default function Testimonials() {
               className="w-full"
             >
               {/* Testimonial Card */}
-              <div className="relative p-8 md:p-12 rounded-3xl backdrop-blur-sm bg-white/10 dark:bg-black/20 border border-white/20 shadow-2xl">
+              <div className="relative p-8 md:p-12 rounded-3xl bg-white/5 dark:bg-black/20 border border-white/20 shadow-2xl">
                 {/* Quote Icon */}
                 <div className="absolute top-8 left-8 text-6xl text-azure-500/20 select-none">
                   "
@@ -155,7 +155,7 @@ export default function Testimonials() {
           <button
             onClick={handlePrev}
             aria-label="Previous testimonial"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center hover:bg-azure-500/20 hover:border-azure-500/50 transition-all duration-300 group"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-12 h-12 rounded-full bg-white/5 border border-white/20 flex items-center justify-center hover:bg-azure-500/20 hover:border-azure-500/50 transition-all duration-300 group"
           >
             <ChevronLeft className="w-6 h-6 text-foreground group-hover:text-azure-500" />
           </button>
@@ -163,7 +163,7 @@ export default function Testimonials() {
           <button
             onClick={handleNext}
             aria-label="Next testimonial"
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center hover:bg-azure-500/20 hover:border-azure-500/50 transition-all duration-300 group"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-12 h-12 rounded-full bg-white/5 border border-white/20 flex items-center justify-center hover:bg-azure-500/20 hover:border-azure-500/50 transition-all duration-300 group"
           >
             <ChevronRight className="w-6 h-6 text-foreground group-hover:text-azure-500" />
           </button>

@@ -174,7 +174,7 @@ export default function BentoGrid() {
             whileHover={{ y: -5, scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className={cn(
-              "relative overflow-hidden rounded-2xl border border-azure-200/30 dark:border-white/10 bg-white/60 dark:bg-white/5 p-6 transition-colors hover:border-azure-400/50 dark:hover:border-white/20 group/card flex flex-col justify-between cursor-pointer backdrop-blur-sm",
+              "relative overflow-hidden rounded-2xl border border-azure-200/30 dark:border-white/10 bg-white/30 dark:bg-white/5 p-6 transition-colors hover:border-azure-400/50 dark:hover:border-white/20 group/card flex flex-col justify-between cursor-pointer",
               item.className
             )}
           >

@@ -79,7 +79,7 @@ export default function AISkillsRadar() {
   const CustomTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border border-azure-300/50 dark:border-azure-500/50 rounded-lg px-3 py-2 shadow-lg">
+        <div className="bg-white/95 dark:bg-gray-900/95 border border-azure-300/50 dark:border-azure-500/50 rounded-lg px-3 py-2 shadow-lg">
           <p className="text-sm font-semibold text-azure-900 dark:text-azure-100">
             {payload[0].payload.skill}
           </p>

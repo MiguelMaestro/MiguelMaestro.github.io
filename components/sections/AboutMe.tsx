@@ -102,7 +102,7 @@ export default function AboutMe() {
         <div className="about-card mb-8">
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="p-8 rounded-2xl backdrop-blur-sm bg-white/10 dark:bg-black/20 border border-white/20 shadow-xl"
+            className="p-8 rounded-2xl bg-white/5 dark:bg-black/20 border border-white/20 shadow-xl"
             style={{ perspective: 1000 }}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -122,7 +122,7 @@ export default function AboutMe() {
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="p-6 rounded-2xl backdrop-blur-sm bg-white/10 dark:bg-black/20 border border-white/20 shadow-xl h-full">
+            <div className="p-6 rounded-2xl bg-white/5 dark:bg-black/20 border border-white/20 shadow-xl h-full">
               <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <span className="text-azure-500">💎</span>
                 <span>Valores</span>
@@ -152,7 +152,7 @@ export default function AboutMe() {
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="p-6 rounded-2xl backdrop-blur-sm bg-white/10 dark:bg-black/20 border border-white/20 shadow-xl h-full">
+            <div className="p-6 rounded-2xl bg-white/5 dark:bg-black/20 border border-white/20 shadow-xl h-full">
               <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <span className="text-accent">🏆</span>
                 <span>Logros Destacados</span>

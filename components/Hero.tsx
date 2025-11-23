@@ -83,7 +83,7 @@ export default function Hero() {
 
         <div className="h-10 md:h-14 mb-8">
           <motion.span
-            className="inline-block text-xl md:text-3xl text-azure-700 dark:text-azure-200 font-mono bg-gradient-to-r from-azure-50/60 dark:from-black/30 to-azure-100/40 dark:to-azure-900/30 px-6 py-3 rounded-xl border border-azure-300/40 dark:border-azure-500/30 backdrop-blur-sm shadow-lg"
+            className="inline-block text-xl md:text-3xl text-azure-700 dark:text-azure-200 font-mono bg-gradient-to-r from-azure-50/80 dark:from-black/40 to-azure-100/60 dark:to-azure-900/40 px-6 py-3 rounded-xl border border-azure-300/40 dark:border-azure-500/30 shadow-lg"
             whileHover={{ scale: 1.05, borderColor: "rgba(14, 165, 233, 0.6)" }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
@@ -137,7 +137,7 @@ export default function Hero() {
             aria-label="Conectar en LinkedIn (abre en nueva pestaña)"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 rounded-full border-2 border-azure-500/40 dark:border-azure-neon/40 text-azure-700 dark:text-azure-100 font-semibold hover:bg-azure-500/10 dark:hover:bg-azure-neon/10 hover:border-azure-600 dark:hover:border-azure-neon transition-all backdrop-blur-sm focus:outline-none focus:ring-4 focus:ring-azure-400"
+            className="px-8 py-3 rounded-full border-2 border-azure-500/40 dark:border-azure-neon/40 text-azure-700 dark:text-azure-100 font-semibold hover:bg-azure-500/10 dark:hover:bg-azure-neon/10 hover:border-azure-600 dark:hover:border-azure-neon transition-all focus:outline-none focus:ring-4 focus:ring-azure-400"
           >
             LinkedIn 🔗
           </motion.a>

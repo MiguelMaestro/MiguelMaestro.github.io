@@ -84,7 +84,7 @@ export default function Home() {
         id="main-content"
         className="relative min-h-screen selection:bg-azure-500/30"
       >
-        <CursorTrail />
+        {/* <CursorTrail /> */}
         <Navbar />
 
         {/* Hero Section */}
